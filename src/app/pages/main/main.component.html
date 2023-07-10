@@ -1,5 +1,11 @@
 <!-- Intro -->
 <section id="intro" class="wrapper style1">
+
+<div class="support">
+	<a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
+	<a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a>
+</div>
+
     <div class="title">The Introduction</div>
     <div class="container">
         <p class="style1">So in case you were wondering what this is all about ...</p>
@@ -15,12 +21,90 @@
         </ul>
     </div>
 </section>
+<section>
+    <h1 class="title">Tenemos diferentes estilos de cocina, para lo que se te antoje</h1>
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <img class="slider__image" src="https://cdn1.matadornetwork.com/blogs/2/2018/08/festival-de-enchiladas-shutterstock_783543961-560x420.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Mole poblano</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://saboryestilo.com.mx/wp-content/uploads/2019/06/comida-gourmet.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>lomillo de cerdo con verduras</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://www.cocinayvino.com/wp-content/uploads/2020/01/Croque-monsieur-e1579547782878.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Croque-monsieur</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://i.pinimg.com/564x/1f/2a/71/1f2a71a766d674ad8c855f828372b9e1.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Pasta con champiñones</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://i.pinimg.com/564x/f3/a1/66/f3a166bc481777f739d4161aa16b7656.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Rollos de pollo rellenos de queso americano y jamon</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://i.pinimg.com/564x/0b/82/a8/0b82a8f62499c095cf14d4f8328fae0f.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Filete en salsa cremosa tipo Cajun con camarones</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://i.pinimg.com/564x/af/87/6b/af876bcd053d9ffac055367e4490a377.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Filete Oscar con langosta</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://i.pinimg.com/564x/c4/7c/9a/c47c9abfca8fcaadd07092380079b9eb.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Lomillo de frutos rojos</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://i.pinimg.com/564x/56/9e/ce/569ecef3ca7646724945e6edf1985116.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Filete de atún con salsa de frambuesa</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://i.pinimg.com/564x/1e/6f/b2/1e6fb25475b8098f98d13194c3c05452.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Pulpo a las brasas</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="https://i.pinimg.com/564x/50/44/84/5044849bfdca5a9cf3612378190b015c.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Banderillas de parrillada</h2>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="slider__nav">
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+  </div> -->
+</div>
+</section>
+
+
 
 <!-- Main -->
 <section id="main" class="wrapper style2">
-    <div class="title">The Details</div>
+    <div class="title">Sucursales</div>
     <div class="container">
-
         <!-- Image -->
             <a href="#" class="image featured">
                 <img src="images/pic01.jpg" alt="" />
@@ -29,53 +113,50 @@
         <!-- Features -->
             <section id="features">
                 <header class="style1">
-                    <h2>Dolor consequat feugiat amet veroeros</h2>
-                    <p>Feugiat dolor nullam orci pretium phasellus justo</p>
+                    <h2>Algunas de las expanciones que hemos realizado</h2>
+                    <p>Al iniciar como un restaurante local, nos es un placer poderles mostrar cada una de las sucursales</p>
                 </header>
                 <div class="feature-list">
                     <div class="row">
                         <div class="col-6 col-12-medium">
                             <section>
-                                <h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
+                                <h3 class="icon fa-comment">Pachuca, Hidalgo</h3>
                                 <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
                             </section>
                         </div>
                         <div class="col-6 col-12-medium">
                             <section>
-                                <h3 class="icon solid fa-sync">Lorem ipsum dolor sit veroeros</h3>
+                                <h3 class="icon solid fa-sync">Santiago de Queretaro, Queretaro</h3>
                                 <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
                             </section>
                         </div>
                         <div class="col-6 col-12-medium">
                             <section>
-                                <h3 class="icon fa-image">Pretium phasellus justo lorem</h3>
+                                <h3 class="icon fa-image">Guadalajara, Jalisco</h3>
                                 <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
                             </section>
                         </div>
                         <div class="col-6 col-12-medium">
                             <section>
-                                <h3 class="icon solid fa-cog">Tempus sed pretium orci</h3>
+                                <h3 class="icon solid fa-cog">Tlaxcala, Tlaxcala</h3>
                                 <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
                             </section>
                         </div>
                         <div class="col-6 col-12-medium">
                             <section>
-                                <h3 class="icon solid fa-wrench">Aliquam consequat et feugiat</h3>
+                                <h3 class="icon solid fa-wrench">Merida, Yucatan</h3>
                                 <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
                             </section>
                         </div>
                         <div class="col-6 col-12-medium">
                             <section>
-                                <h3 class="icon solid fa-check">Dolore laoreet aliquam mattis</h3>
+                                <h3 class="icon solid fa-check">Roma norte, CDMX</h3>
                                 <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
                             </section>
                         </div>
                     </div>
                 </div>
-                <ul class="actions special">
-                    <li><a href="#" class="button style1 large">Get Started</a></li>
-                    <li><a href="#" class="button style2 large">More Info</a></li>
-                </ul>
+                
             </section>
 
     </div>
